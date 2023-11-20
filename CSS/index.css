@@ -88,3 +88,257 @@
     border-radius: 8px; /* Optional: Add rounded corners to the image */
   }
   
+  /* Base styles for the context card */
+.context-card {
+    background-color: #fff; /* White background initially */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+    margin-bottom: 15px; /* Space between cards if stacked */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Change cursor to indicate the card is interactive */
+  }
+  
+  .context-card .card-body {
+    padding: 20px; /* Spacing inside the card */
+  }
+  
+  .context-card .number,
+  .context-card .title,
+  .context-card .info {
+    color: #000;
+    margin: 0;
+    line-height: 1.2; /* Adjust line height for better readability */
+  }
+  
+  .context-card .number {
+    font-size: 2em; /* Large font size for the number */
+  }
+  
+  .context-card .title {
+    font-size: 1.5em; /* Large font size for the title */
+    margin-top: 0.5em; /* Space above the title */
+    margin-bottom: 0.5em; /* Space below the title */
+  }
+  
+  .context-card .info {
+    display: none; /* Hide the info text initially */
+  }
+  
+  .context-card .title:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #000;
+    margin: 20px auto;
+  }
+  
+  /* Hover styles */
+  .context-card:hover {
+    background-color: #B5DDBF;
+  }
+  
+  .context-card:hover .number,
+  .context-card:hover .title {
+    color: #fff; /* White text on hover */
+  }
+  
+  .context-card:hover .info {
+    display: block; /* Show the info text on hover */
+    color: #000;
+  }
+  
+  .context-card:hover .title:after {
+    background-color: #fff; /* White line on hover */
+  }
+  
+  /* Context Section Styles */
+.context-section {
+    background-color: #fff;
+    color: #333; /* Dark text for readability */
+  }
+  
+  .context-title {
+    font-size: 2rem;
+    color: #000; 
+    font-weight: bold;
+    margin-bottom: 1rem; /* Spacing below the title */
+  }
+  
+  .context-subhead {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin-bottom: 2rem; /* Spacing below the subhead list */
+    font-weight: bold; /* Bold font for subheadings */
+  }
+  
+  .context-subhead li {
+    padding: .5rem 0; /* Spacing for each list item */
+    border-left: 3px solid #4CAF50; /* Green border on the left of list items */
+    margin-bottom: .5rem; /* Spacing between list items */
+  }
+  
+  .context-content h3 {
+    font-size: 1.5rem; /* Font size for subheadings in content */
+    color: #333; /* Dark text color for subheadings */
+    font-weight: bold; /* Bold font for subheadings */
+    margin-top: 1rem; /* Spacing above subheadings */
+  }
+  
+  .context-content p {
+    font-size: 1rem; /* Font size for paragraph text */
+    line-height: 1.6; /* Line height for paragraph text */
+    margin-bottom: 1rem; /* Spacing below paragraphs */
+  }
+  
+  /* Divider Line Styles */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Design Process Section Styles */
+  .design-process-section {
+    background-color: #fff; 
+    color: #333;
+  }
+  
+  .design-process-title {
+    font-size: 2rem; /* Larger font size for the section title */
+    font-weight: bold; /* Bold font weight for the title */
+    margin-bottom: 3rem; /* Space below the title before the image */
+    color: #2c3e50; /* Dark shade of blue for the title text */
+  }
+  
+  /* Ensuring the image is responsive and scales with the parent container */
+  .img-fluid {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  /* Project Brief Section Styles */
+.project-brief-section {
+    background-color: #fff; /* White background for the section */
+    color: #333; /* Dark text for readability */
+  }
+  
+  .project-brief-title {
+    font-size: 2rem; /* Larger font size for the title */
+    color: #2c3e50; /* Dark shade of blue for the title text */
+    font-weight: bold; /* Bold font weight for the title */
+    margin-bottom: 1rem; /* Spacing below the title */
+  }
+  
+  .project-brief-subhead {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin-bottom: 2rem; 
+    font-weight: bold; 
+  }
+  
+  .project-brief-subhead li {
+    padding: .5rem 0; 
+    border-left: 3px solid #4CAF50; 
+    margin-bottom: .5rem; /* Spacing between list items */
+  }
+  
+  .project-brief-content h3 {
+    font-size: 1.5rem; 
+    color: #333; 
+    font-weight: bold;
+    margin-top: 1rem; 
+  }
+  
+  .project-brief-content p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    margin-bottom: 1rem; 
+  }
+  
+.user-quote-image {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border: 3px solid #ddd;
+}
+  
+  blockquote {
+    font-size: 1rem; 
+    font-style: italic; 
+    margin-top: 1rem; 
+    max-width: 80%; 
+  }
+  
+  
+.features-section {
+    background-color: #fff; 
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+  }
+  
+  .features-section .container {
+    max-width: 1200px; 
+  }
+  
+  .features-section h3,
+  .features-section h4 {
+    color: #000; 
+    margin-bottom: 15px; 
+  }
+  
+  .features-section ol {
+    counter-reset: feature-counter; /
+    list-style-type: none; 
+    padding-left: 0; 
+  }
+  
+  .features-section ol li {
+    counter-increment: feature-counter; 
+    margin-bottom: 15px; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    position: relative; 
+  }
+  
+  .features-section ol li::before {
+    content: counter(feature-counter) "."; /* Add counter number before list item */
+    position: absolute; /* Position absolutely within the li */
+    left: -35px; /* Adjust as needed */
+    top: 0;
+    font-weight: bold; /* Make the counter bold */
+    color: #333; /* Color for the counter */
+  }
+  
+  .features-section h4 {
+    font-size: 
+    font-weight: bold; 
+  }
+  
+  .features-section p {
+    font-size: 1rem; 
+    color: #666; 
+    margin-bottom: 10px; /* Space below paragraphs */
+  }
+  
+  /* Style for the Value Proposition Statement */
+  .features-section .value-proposition {
+    font-weight: bold; 
+    color: #333; 
+    margin-top: 30px; 
+  }
+  
+
+  .features-section .value-proposition-img {
+    width: 100%; 
+    height: auto; 
+    margin-top: 20px; 
+  }
+  
+  .features-section .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
