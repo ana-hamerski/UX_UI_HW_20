@@ -341,7 +341,7 @@
   }
   
   .design-section {
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: #333;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -353,33 +353,33 @@
     font-weight: bold;
   }
   
-  .design-subhead {
+  .design-subhead, .lo-fi-subhead {
     list-style: none; /* Remove default list styles */
     padding: 0; /* Remove default padding */
     margin-bottom: 2rem; 
     font-weight: bold; 
   }
   
-  .design-subhead li {
+  .design-subhead li, .lo-fi-subhead li {
     padding: .5rem 0; 
     border-left: 3px solid #4CAF50; 
     margin-bottom: .5rem; /* Spacing between list items */
   }
   
-  .design-subtitle {
+  .design-subtitle, .lo-fi-title {
     font-size: 1.5rem;
     color: #333;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  .design-description {
+  .design-description, .lo-fi-description {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
   }
   
-  .design-section img {
+  .design-section img, .lo-fi-section img {
     border: 1px solid #ddd;
     padding: 5px;
     background-color: #fff;
@@ -398,12 +398,13 @@
       font-size: 2rem;
     }
   
-    .design-subtitle {
+    .design-subtitle, .lo-fi-title {
       font-size: 1.25rem;
     }
   
-    .design-description {
+    .design-description, .lo-fi-description {
       font-size: 0.9rem;
     }
   }
+  
   
