@@ -304,12 +304,11 @@
   }
   
   .features-section ol li::before {
-    content: counter(feature-counter) "."; /* Add counter number before list item */
-    position: absolute; /* Position absolutely within the li */
-    left: -35px; /* Adjust as needed */
+    content: counter(feature-counter) "."; 
+    position: absolute; 
+    left: -35px; 
     top: 0;
-    font-weight: bold; /* Make the counter bold */
-    color: #333; /* Color for the counter */
+    color: #333; 
   }
   
   .features-section h4 {
@@ -320,10 +319,9 @@
   .features-section p {
     font-size: 1rem; 
     color: #666; 
-    margin-bottom: 10px; /* Space below paragraphs */
+    margin-bottom: 10px; 
   }
   
-  /* Style for the Value Proposition Statement */
   .features-section .value-proposition {
     font-weight: bold; 
     color: #333; 
@@ -340,5 +338,72 @@
   .features-section .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+  
+  .design-section {
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .design-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .design-subhead {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin-bottom: 2rem; 
+    font-weight: bold; 
+  }
+  
+  .design-subhead li {
+    padding: .5rem 0; 
+    border-left: 3px solid #4CAF50; 
+    margin-bottom: .5rem; /* Spacing between list items */
+  }
+  
+  .design-subtitle {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .design-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .design-section img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .design-section {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    .design-title {
+      font-size: 2rem;
+    }
+  
+    .design-subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .design-description {
+      font-size: 0.9rem;
+    }
   }
   
